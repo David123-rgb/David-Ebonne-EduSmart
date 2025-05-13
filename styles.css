@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #0077cc;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#hero {
+    background: #e0f0ff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#courses {
+    padding: 2rem;
+    background: #fff;
+}
+
+.courses{
+    padding: 2rem;
+    background: #fff;
+}
+
+#course-details {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+    font-size: 14.5px;
+}
+
+#course-details h5 {
+    margin-top: 15px;
+    color: #0077cc;
+}
+
+#course-details ul{
+    padding-left: 20px;
+}
+
+#course-details li {
+    color: #444;
+    margin-bottom: 6px;
+}
+
+#course-science-card {
+    background-color: #fff8f0;
+    border-left: 5px solid #0077cc;
+    box-shadow: 0 4px 12px rgba(126, 157, 0, 0.2);
+}
+
+#course-science-card h3{
+    color: #0077cc;
+}
+
+#course-science-card button {
+    background-color: #0077cc;
+    color: white;
+}
+
+#course-science-card button:hover {
+    background-color: #0077cc;
+}
+
+#data-science-card {
+    background-color: #fff8f0;
+    border-left: 5px solid #ff9800;
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
+}
+
+#data-science-card h3{
+    color: #e65100;
+}
+
+#data-science-card button {
+    background-color: #e65100;
+    color: white;
+}
+
+#data-science-card button:hover {
+    background-color: #bf360c;
+}
+
+#data-course-details {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff3e0;
+    border-left: 4px solid #ff9800;
+    border-radius: 6px;
+    font-size: 14.5px;
+}
+
+#data-course-details h5 {
+    margin-top: 15px;
+    color: #bf360c;
+}
+
+#data-course-details ul {
+    padding-left: 20px;
+}
+
+#data-course-details li {
+    color: #444;
+    margin-bottom: 6px;
+}
+
+#uiux-card {
+    background-color: #f3f0ff;
+    border-left: 5px solid #7e57c2;
+    box-shadow: 0 4px 12px rgba(126, 87, 194, 0.2);
+}
+
+#uiux-card h3 {
+    color: #5e35b1;
+}
+
+#uiux-card button {
+    background-color: #7e57c2;
+    color: white;
+}
+
+#uiux-card button:hover {
+    background-color: #5e35b1;
+}
+
+#uiux-course-details {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #ede7f6;
+    border-left: 4px solid #7e57c2;
+    border-radius: 6px;
+    font-size: 14.5px;
+}
+
+#uiux-course-details h5 {
+    color: #4a148c;
+    margin-top: 15px;
+}
+
+#uiux-course-details ul {
+    padding-left: 20px;
+}
+
+#uiux-course-details li {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:1rem;
+}
+
+.course-card {
+    background: #f0f0f0;
+    padding:1rem;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    background: #e0e0e0;
+}
+
+#about {
+    background-color: #f9fbfd;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+#about p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.highlight {
+    flex: 1;
+    min-width: 260px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 4px solid #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.highlight h4 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.highlight ul {
+    padding-left: 20px;
+}
+
+.highlight ul li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#about, #contact {
+    padding: 2rem;
+}
+
+
+form input, form textarea {
+display: block;
+width: 100%;
+margin-bottom: 1rem;
+padding: 0.75rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+form button {
+    padding: 0.75rem 1.5rem;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+#contact {
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #007BFF;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#cntact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0077cc;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+    }
+    
+    nav .nav-links.active {
+        display: flex;
+    }
+    #menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-align: right;
+        padding: 0.5rem;
+    }
+}

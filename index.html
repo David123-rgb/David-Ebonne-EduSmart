@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSmart</title>
+    <link rel="stylesheet" href="styles.css">
+
+<body>
+    <header>
+        <div class="logo">EduSmart</div>
+        <nav id="nav">
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#courses" class="active">Courses</a></li>
+            <li><a href="#contact" class="active">Contact</a></li>
+        </ul>
+        <div id="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Empower Your Learning Journey</h1>
+        <p>Access hundreds of online courses from top instructors.</p>
+        <a href="#courses" class="btn">Explore Courses</a>
+    </section>
+
+
+    <section id="about">
+        <div class="about-container"></div>
+        <h2>About EduSmart</h2>
+        <p>EduSmart is an EdTech platform offering accessible and flexible learning experience to students worldwide.</p>
+        <p>Whether you're a beginner or looking to sharpen your skills, EduSmart provides learning environment that's interactive, flexible, and career-focused.</p>
+
+        <div class="about-highlights">
+            <div class="highlight">
+                <h4>Our Mission</h4>
+                <p>To make quality digital education accessible to everyone, everywhere.</p>
+        </div>
+        <div class="highlight">
+            <h4>What makes Us Unique?</h4>
+            <ul>
+                <li>Hands-on projects and real-world examples</li>
+                <li>responsive design for learning on any device</li>
+                <li>Expert instructors with industry experience</li>
+                <li>Community support and mentorship</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="courses">
+        <h2>Features Courses</h2>
+        <div class="course-grid">
+            <div class="course-card" id="course-science-card">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS and JavaScript from scratch.</p>
+                <button onclick="toggleDetails()">View Details</button>
+
+                <div id="course-details" style="display: none;">
+                    <h4>What You'll Learn:</h4>
+
+                    <h5>HTML (HyperText Markup Language)</h5>
+                    <p>HTML is the backbone of web pages. It define the structure and layout of content using tags like headings, paragraphs, lists, images, links, and more.</p>
+                <ul>
+                <li>Basic HTML tags and structure</li>
+                <li>Form and input fields</li>
+                <li>Semantic HTML elements</li>
+                <li>Creating tables and links</li>
+                </ul>
+
+                <h5>CSS (Cascading Style Sheets)</h5>
+                <p>CSS style the appearance of your web page. It allows you to add colors, layout, spacing, animations, and responsive designs.</p>
+                <ul>
+                    <li>Selectors and properties</li>
+                    <li>Box model, margin & padding</li>
+                    <li>Flexbox and Grid layout</li>
+                    <li>Media queries for responsiveness</li>
+                    </ul>
+
+                    <h5>JavaScript</h5>
+                    <p>JavaScript makes your website interactive. You can respond to clicks, validate forms, show/hide element, and build real-time features.</p>
+                    <ul>
+                        <li>Variables, functions, loops</li>
+                        <li>DOM manipulation</li>
+                        <li>Event handling (like button clicks)</li>
+                        <li>Mini projects like calculators, games</li>
+                    </ul>
+
+                    <p>By the end of this course, you'll be confident building responsive, interactive websites from scratch.</p>
+            </div>
+            </div>
+        <div class="course-card" id="data-science-card">
+            <h3>Data Science</h3>
+            <p>Analyze data and build models using Python.</p>
+            <button onclick="toggleDataDetails()">View Details</button>
+
+            <div id="data-course-details" style="display: none;">
+                <h4>What You'll Learn:</h4>
+
+                <h5>Python Programming</h5>
+                <p>Python is one of the most popular language for data science. It's simple, readable, and poweful for working with data and automating tasks.</p>
+                <ul>
+                    <li>Python syntax and data types</li>
+                    <li>Loops, functions, and conditionals</li>
+                    <li>Working with lists, dictionaries, and files</li>
+                    <li>Using Jupyter Notebooks</li>
+                </ul>
+
+                <h5>Data Analysis</h5>
+                <p>Learn how to collect, clean, and analyze real-world data Python liberies like pandas and NumPy.</p>
+                <ul>
+                    <li>Data cleaning and preparation</li>
+                    <li>Exploratory Data Anaysis (EDA)</li>
+                    <li>Using Pandas for DataFrames</li>
+                    <li>Visualizing data with Matplotlib and Seaborn</li>
+                </ul>
+
+                <h5>Machine Learning Basics</h5>
+                <p>Build your first predictive models using Scikit-learn. Understand how machines learn from data to make decisions.</p>
+                <ul>
+                    <li>Supervised vs unsupervised learning</li>
+                    <li>Training and testing models</li>
+                    <li>linear regression, classification</li>
+                    <li>Model evaluation (accuracy, confusion matrix)</li>
+                </ul>
+
+                <p>This course will help you go from beginner to confident data explorer, ready to work with real datasets and build smart systems.</p>
+        </div>
+        </div>
+        <div class="course-card" id="uiux-card">
+            <h3>UI/UX Design</h3>
+            <p>Create engaging and user-friendly interface and smooth user experience.</p>
+            <button onclick="toggleUIUXDetails()">View Details</button>
+
+            <div id="uiux-course-details" style="display: none;">
+                <h4>What You'll Learn:</h4>
+
+                <h5>UI Design (User Interface)</h5>
+                <p>UI design focuses on the look and layout of a product - buttons, colors, spacing, and typography.</p>
+                <ul>
+                    <li>Design principles: alignment, contrast, balance</li>
+                    <li>Creating wireframes and mockups</li>
+                    <li>Using tools like Figma or Adobe XD</li>
+                    <li>Designing for different screen sizes</li>
+                </ul>
+
+                <h5>UX Design (User Experience)</h5>
+                <p>Ux is about how users interact with a product. Learn how to make your designs intuitive, accessible, and useful.</p>
+                <ul>
+                    <li>User research and personas</li>
+                    <li>Information architecture</li>
+                    <li>User flows and journey maps</li>
+                    <li>Usability testing and feedback</li>
+                </ul>
+
+                <h5>Tools & Collaboration</h5>
+                <p>UI/UX Designers work closely with developers. Learn to hand off your designs using tools and proper documentation.</p>
+                <ul>
+                    <li>Prototyping interactions</li>
+                    <li>Design system and style guides</li>
+                    <li>Collaboration with developers</li>
+                    <li>Versioning and feedback cycles</li>
+                </ul>
+
+                <p>This course helps you design apps and websits that are both beautiful and easy to use.</p>
+        </div>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? We'd love to hear from you!</p>
+        <form id="contact-form">
+            <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+            <textarea id="message"  rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Edusmart. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
